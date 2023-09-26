@@ -123,24 +123,15 @@
     color: white;
 }
 
-#navbar {
-    color: black;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 3;
-}
-
 .bg-navbar {
-    background-color: #FFF;
-    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.06);
+    background-color: #fff3ed;
+    box-shadow: 5px 6px 12px 0px rgba(0, 0, 0, 0.06);
     transition: all .5s;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 7px;
 }
 
 /* Track */
@@ -282,8 +273,6 @@
     flex-shrink: 0;
 }
 
-.mw-1016 {}
-
 .slick-track {
     position: relative;
     top: 0;
@@ -319,22 +308,19 @@
     fill: white;
 }
 
-.card-1-big-ellipse {
-    right: 0;
-    bottom: 0;
+.card-1-small-ellipse {
+    right: 0%;
+    bottom: 0%;
+    z-index: -3;
 }
 
-.card-1-small-ellipse {
-    right: 0;
-    bottom: 0;
-}
 
 .mb-40 {
     margin-bottom: 38px;
 }
 
 .mw-218 {
-    min-width: 218px;
+    max-width: 218px;
     line-height: 150.535%;
     /* 24.086px */
 }
@@ -344,7 +330,7 @@
 }
 
 .card1:hover {
-    transform: translateY(-40px);
+    transform: translateY(-20px);
     background: linear-gradient(97deg, #FD9B2B 13.58%, #F14F09 86.99%);
     box-shadow: 0px 4px 66px 0px rgba(243, 136, 14, 0.04);
     color: #fff;
@@ -355,7 +341,7 @@
 }
 
 .card1:hover svg path {
-    fill: url("#paint0_linear_19268_1856");
+    fill: url("#paint0_linear_19268_1845");
 }
 
 .card1:hover svg g circle {
@@ -406,6 +392,10 @@
     border: none;
     border-bottom: 1px solid black;
     outline: 0;
+}
+
+textarea {
+    resize: none !important;
 }
 
 .bg-footer {
@@ -522,10 +512,6 @@
 }
 
 @media (max-width:768px) {
-    .bg-footer {
-        background-color: black;
-    }
-
     .fs-61 {
         font-size: var(--fs-48);
     }
@@ -567,5 +553,9 @@
 
     .fw-800 {
         font-weight: var(--fw-500);
+    }
+
+    .bg-footer {
+        background-color: black;
     }
 }
